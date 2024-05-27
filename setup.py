@@ -5,7 +5,7 @@ from io import open
 VERSION = '0.3'
 
 install_requires = [
-    'pymorphy2 >=0.8'
+    'pymorphy3 >=2.0.0'
 ]
 
 if sys.version_info < (2, 7):
@@ -30,7 +30,7 @@ setup(
     download_url = 'https://github.com/igor-shevchenko/rutermextract/tarball/%s' % VERSION,
 
     requires = [
-        'pymorphy2 (>=0.8)',
+        'pymorphy3 (>=2.0.0)',
         'enum34 (>=1.0)',
         'backport_collections (>=0.1)'
     ],

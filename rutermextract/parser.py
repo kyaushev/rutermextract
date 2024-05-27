@@ -1,10 +1,10 @@
 # coding=utf-8
-import pymorphy2
+import pymorphy3
 
 
 class ParsedWord(object):
     """
-    Обёртка над результатом разбора pymorphy2.
+    Обёртка над результатом разбора pymorphy3.
     """
 
     def __init__(self, parsed):
@@ -70,11 +70,11 @@ class ParsedWord(object):
 
 class Parser(object):
     """
-    Морфологический парсер (обёртка над pymorphy2).
+    Морфологический парсер (обёртка над pymorphy3).
     """
 
     def __init__(self):
-        self.morph = pymorphy2.MorphAnalyzer()
+        self.morph = pymorphy3.MorphAnalyzer()
 
     def __call__(self, word):
         parsed_word = self.morph.parse(word)
