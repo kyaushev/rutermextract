@@ -2,7 +2,7 @@ from setuptools import setup
 import sys
 from io import open
 
-VERSION = '0.3'
+VERSION = '0.3.1'
 
 install_requires = [
     'pymorphy3 >=2.0.0'
